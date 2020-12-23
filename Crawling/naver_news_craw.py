@@ -7,7 +7,7 @@ from collections import Counter
 from wordcloud.wordcloud import WordCloud, STOPWORDS
 import matplotlib.pyplot as plt 
 import pymysql
-from datetime import datetime
+import datetime
 from db_connect import naver_news_info, naver_news_remove
 from helper_connect import DBConnect # 디비 연결
 
@@ -36,6 +36,7 @@ def pageCrawl(conn):
             news_name = ''
             news_date = ''
             news_article = ''
+            craw_date = datetime.datetime.now()
 
             
             new_tit = i.select('div.news_wrap.api_ani_send > div > a')
@@ -106,7 +107,7 @@ def pageCrawl(conn):
                             return
                         else:
                             print(str(cnt),'기사입력중 : ',title)
-                            naver_news_info(conn, title, link, company, upload_date, content, words)
+                            naver_news_info(conn, title, link, company, upload_date, content, words, craw_date)
 
                     except:
                         print('기사입력오류')

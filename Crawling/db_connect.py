@@ -94,11 +94,11 @@ def foreignbank_info(conn, Country_name, USD, JPY, now):
 
 
 # 네이버 뉴스기사 크롤링해서 DB 넣기
-def naver_news_info(conn, title, link, company, upload_date, content, words):
+def naver_news_info(conn, title, link, company, upload_date, content, words, craw_date):
     cursor = conn.cursor()
 
-    sql = "INSERT INTO NaverNews(title, link, company, upload_date, content, words) values(%s,%s,%s,%s,%s,%s);"
-    cursor.execute(sql, (title, link, company, upload_date, content, words))
+    sql = "INSERT INTO NaverNews(title, link, company, upload_date, content, words, craw_date) values(%s,%s,%s,%s,%s,%s,%s);"
+    cursor.execute(sql, (title, link, company, upload_date, content, words, craw_date))
     conn.commit()
 
 
