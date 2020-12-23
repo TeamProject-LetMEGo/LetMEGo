@@ -1,0 +1,16 @@
+# INSERT INTO 'DB명'.'table명' ('bank_code', 'bank_name', 'bank_logo') VALUES ('005', '하나은행', 'hana');
+
+INSERT INTO 'letmego'.'bank_info' ('bank_code', 'bank_name', 'bank_logo') VALUES ('005', '하나은행', 'hana');
+INSERT INTO 'letmego'.'bank_info' ('bank_code', 'bank_name', 'bank_logo') VALUES ('020', '우리은행', 'woori');
+INSERT INTO 'letmego'.'bank_info' ('bank_code', 'bank_name', 'bank_logo') VALUES ('004', 'KB국민은행', 'kookmin');
+INSERT INTO 'letmego'.'bank_info' ('bank_code', 'bank_name', 'bank_logo') VALUES ('088', '신한은행', 'shinhan');
+INSERT INTO 'letmego'.'bank_info' ('bank_code', 'bank_name', 'bank_logo') VALUES ('011', 'NH농협은행', 'nonghyup');
+INSERT INTO 'letmego'.'bank_info' ('bank_code', 'bank_name', 'bank_logo') VALUES ('003', 'IBK기업은행', 'gieob');
+INSERT INTO 'letmego'.'bank_info' ('bank_code', 'bank_name', 'bank_logo') VALUES ('023', '스탠다드차타드은행', 'standard');
+INSERT INTO 'letmego'.'bank_info' ('bank_code', 'bank_name', 'bank_logo') VALUES ('027', '한국씨티은행', 'citi');
+INSERT INTO 'letmego'.'bank_info' ('bank_code', 'bank_name', 'bank_logo') VALUES ('007', 'SH수협은행', 'suhyup');
+INSERT INTO 'letmego'.'bank_info' ('bank_code', 'bank_name', 'bank_logo') VALUES ('032', 'BNK부산은행', 'busan');
+INSERT INTO 'letmego'.'bank_info' ('bank_code', 'bank_name', 'bank_logo') VALUES ('031', 'DGB대구은행', 'daegu');
+INSERT INTO 'letmego'.'bank_info' ('bank_code', 'bank_name', 'bank_logo') VALUES ('037', '전북은행', 'jeonbug');
+INSERT INTO 'letmego'.'bank_info' ('bank_code', 'bank_name', 'bank_logo') VALUES ('039', 'BNK경남은행', 'gyeongnam');
+INSERT INTO 'letmego'.'bank_info' ('bank_code', 'bank_name', 'bank_logo') VALUES ('035', '제주은행', 'jeju');
